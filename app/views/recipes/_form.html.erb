@@ -1,0 +1,35 @@
+<%= form_with model: recipe, local: true do |f| %>
+
+  <% if recipe.errors.any? %>
+    <div class="alert alert-danger">
+      <h4>Errores:</h4>
+      <ul>
+        <% recipe.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="mb-3">
+    <%= f.label :title, "Título" %>
+    <%= f.text_field :title, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :cook_time, "Tiempo de preparación (minutos)" %>
+    <%= f.number_field :cook_time, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :difficulty, "Dificultad" %>
+    <%= f.select :difficulty, ["Easy", "Medium", "Hard"], {}, class: "form-select" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :instructions, "Instrucciones" %>
+    <%= f.rich_text_area :instructions %>
+  </div>
+
+  <%= f.submit "Guardar", class: "btn btn-primary" %>
+<% end %>
