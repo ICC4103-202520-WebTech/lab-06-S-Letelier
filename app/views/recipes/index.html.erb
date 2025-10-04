@@ -1,14 +1,13 @@
-<h1>Recetas</h1>
+<h1>Recipes</h1>
 
-<%= link_to "Nueva Receta", new_recipe_path %>
+<%= link_to "New Recipe", new_recipe_path %>
 
 <table class="table">
   <thead>
     <tr>
-      <th>Título</th>
-      <th>Tiempo</th>
-      <th>Dificultad</th>
-      <th>Acciones</th>
+      <th>Title</th>
+      <th>Time</th>
+      <th>Difficulty</th>
     </tr>
   </thead>
   <tbody>
@@ -18,9 +17,11 @@
         <td><%= recipe.cook_time %> min</td>
         <td><%= recipe.difficulty %></td>
         <td>
-          <%= link_to "Ver", recipe_path(recipe), class: "btn btn-success btn-sm" %>
-          <%= link_to "Editar", edit_recipe_path(recipe), class: "btn btn-warning btn-sm" %>
-          <%= button_to "Eliminar", recipe_path(recipe), method: :delete, data: { turbo_confirm: "¿Estás seguro?" } %>
+          <p></p>
+          <%= link_to "See", recipe_path(recipe), class: "btn btn-success btn-sm" %>
+          <%= link_to "Edit", edit_recipe_path(recipe), class: "btn btn-warning btn-sm" %>
+          <%= button_to "Delete", recipe_path(recipe), method: :delete, data: { turbo_confirm: "¿Estás seguro?" } %>
+          <p></p>
 
 
       </tr>

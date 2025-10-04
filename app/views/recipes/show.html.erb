@@ -1,10 +1,12 @@
 <h1><%= @recipe.title %></h1>
 
-<p>Tiempo de preparación: <%= @recipe.cook_time %> minutos</p>
-<p>Dificultad: <%= @recipe.difficulty %></p>
-<p>Instrucciones:</p>
+<p>Preparation Time: <%= @recipe.cook_time %> minutos</p>
+<p>Difficulty: <%= @recipe.difficulty %></p>
+<p>Instructions: </p>
 <div><%= @recipe.instructions %></div>
+<p></p>
 
-<%= link_to "Editar", edit_recipe_path(@recipe), class: "btn btn-warning" %>
-<%= link_to "Volver al listado", recipes_path, class: "btn btn-secondary" %>
+<%= link_to "Edit", edit_recipe_path(@recipe), class: "btn btn-warning" %>
+<p></p>
+<%= link_to "Back to List", recipes_path, class: "btn btn-secondary" %>
 

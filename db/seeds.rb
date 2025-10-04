@@ -12,31 +12,32 @@ Recipe.destroy_all
 
 # Crear algunas recetas de ejemplo
 Recipe.create!(
-  title: "Pizza Margarita",
+  title: "Margherita Pizza",
   cook_time: 30,
   difficulty: "Easy",
-  instructions: "<p>1. Precalentar el horno a 220°C.</p>
-                 <p>2. Estirar la masa y colocar la salsa de tomate.</p>
-                 <p>3. Agregar queso mozzarella y albahaca fresca.</p>
-                 <p>4. Hornear durante 12-15 minutos.</p>"
+  instructions: "<p>1. Preheat the oven to 220°C.</p>
+                 <p>2. Roll out the dough and spread the tomato sauce.</p>
+                 <p>3. Add mozzarella cheese and fresh basil.</p>
+                 <p>4. Bake for 12-15 minutes.</p>"
 )
 
 Recipe.create!(
   title: "Spaghetti Carbonara",
   cook_time: 25,
   difficulty: "Medium",
-  instructions: "<p>1. Cocinar los spaghetti en agua con sal.</p>
-                 <p>2. Freír panceta hasta que quede crujiente.</p>
-                 <p>3. Mezclar huevos y queso parmesano en un bol.</p>
-                 <p>4. Combinar spaghetti, panceta y mezcla de huevo rápidamente.</p></p>"
+  instructions: "<p>1. Cook the spaghetti in salted water.</p>
+                 <p>2. Fry the pancetta until crispy.</p>
+                 <p>3. Mix eggs and Parmesan cheese in a bowl.</p>
+                 <p>4. Quickly combine spaghetti, pancetta, and egg mixture.</p>"
 )
 
 Recipe.create!(
   title: "Tiramisu",
   cook_time: 40,
   difficulty: "Hard",
-  instructions: "<p>1. Batir yemas con azúcar.</p>
-                 <p>2. Agregar queso mascarpone y mezclar.</p>
-                 <p>3. Sumergir los bizcochos en café y armar capas alternando con la crema.</p>
-                 <p>4. Refrigerar al menos 4 horas antes de servir.</p>"
+  instructions: "<p>1. Beat the egg yolks with sugar.</p>
+                 <p>2. Add mascarpone cheese and mix well.</p>
+                 <p>3. Dip the ladyfingers in coffee and layer alternately with the cream.</p>
+                 <p>4. Refrigerate for at least 4 hours before serving.</p>"
 )
+
